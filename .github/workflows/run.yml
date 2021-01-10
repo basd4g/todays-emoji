@@ -13,10 +13,10 @@ jobs:
 
     - name: Update Twitter Name
       env:
-        consumer_key: ${{ secrets.consumer_key }}
-        consumer_secret: ${{ secrets.consumer_secret }}
-        access_token_key: ${{ secrets.access_token_key }}
-        access_token_secret: ${{ secrets.access_token_secret }}
+        consumer_key: ${{ secrets.CONSUMER_KEY }}
+        consumer_secret: ${{ secrets.CONSUMER_SECRET }}
+        access_token_key: ${{ secrets.ACCESS_TOKEN_KEY }}
+        access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
       run: |
         cd ${GITHUB_WORKSPACE}
         npm i
