@@ -2,7 +2,7 @@ name: twitter-name-workflow
 
 on:
   push:
-    branches: [ master ]
+    branches: [ run-immediately ]
   schedule:
     - cron: '0 9 * * *'
 # Run on everyday 00:00 (JST)
