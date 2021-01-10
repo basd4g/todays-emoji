@@ -1,0 +1,23 @@
+name: twitter-name-workflow
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+# Run on everyday 00:00 (JST)
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Update Twitter Name
+      env:
+        consumer_key: ${{ secrets.consumer_key }}
+        consumer_secret: ${{ secrets.consumer_secret }}
+        access_token_key: ${{ secrets.access_token_key }}
+        access_token_secret: ${{ secrets.access_token_secret }}
+      run: |
+        cd ${GITHUB_WORKSPACE}
+        npm i
+        npm start

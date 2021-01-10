@@ -1,0 +1,22 @@
+{
+  "name": "todays-emoji",
+  "version": "1.0.0",
+  "description": "Update my Twitter user name including emoji",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basd4g/todays-emoji.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basd4g/todays-emoji/issues"
+  },
+  "homepage": "https://github.com/basd4g/todays-emoji#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
